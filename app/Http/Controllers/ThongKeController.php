@@ -46,7 +46,7 @@ class ThongKeController extends Controller {
                             LEFT JOIN chi_nhanh c ON a.chi_nhanh_id = c.chi_nhanh_id
                             WHERE a.chi_nhanh_id = :idChiNhanh
                             AND $where
-                            AND a.thu_nhap_ngay_nhap BETWEEN :tuNgay AND :denNgay GROUP BY a.id_nguoi_dung", $param);
+                            AND a.thu_nhap_ngay_nhap BETWEEN :tuNgay AND :denNgay GROUP BY a.id_nguoi_dung,b.username,c.chi_nhanh_ma,c.chi_nhanh_ten", $param);
         $tongTien = 0;
         $tongThuong = 0;
         foreach($data as $value){
