@@ -59,7 +59,7 @@ DANH SÁCH TÀI KHOẢN
 						<div class="form-group">
 							<label for="qt_HoTen" class="control-label">Họ Tên</label>
 
-							<input type="text" class="form-control" id="qt_HoTen" name="qt_HoTen" placeholder="Nhập Họ Tên>
+							<input type="text" class="form-control" id="qt_HoTen" name="qt_HoTen" placeholder="Nhập Họ Tên">
 						</div>	
 						<div class="form-group">
 							<label for="qt_TenDangNhap" class="control-label">Tên Đăng Nhập</label>
