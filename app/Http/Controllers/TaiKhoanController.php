@@ -27,7 +27,7 @@ class TaiKhoanController extends Controller
         }else{
             if($User = DB::table('users')->insert(
                 [
-                    'HoTen'=>$request->HoTen,
+                    'hoten'=>$request->HoTen,
                     'username'=>$request->username,
                     'password'=>bcrypt($request->password),
                     'quyen'=> 0
