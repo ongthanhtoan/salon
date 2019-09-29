@@ -40,7 +40,7 @@ class ThongKeController extends Controller {
             'tuNgay' => $tuNgay, 
             'denNgay' => $denNgay
         );
-        $data = DB::select("SELECT b.username, b.hoten, c.chi_nhanh_ma, c.chi_nhanh_ten, SUM(a.thu_nhap_so_tien) tong, FLOOR((SUM(a.thu_nhap_so_tien)*5)/100) thuong
+        $data = DB::select("SELECT b.username, b.hoten, c.chi_nhanh_ma,a.id_nguoi_dung, c.chi_nhanh_ten, SUM(a.thu_nhap_so_tien) tong, FLOOR((SUM(a.thu_nhap_so_tien)*5)/100) thuong
                             FROM thu_nhap a
                             LEFT JOIN users b ON a.id_nguoi_dung = b.id
                             LEFT JOIN chi_nhanh c ON a.chi_nhanh_id = c.chi_nhanh_id
